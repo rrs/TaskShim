@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Description>Rrs.TaskShim Class Library</Description>
-    <Authors>Aaron Navarro</Authors>
+    <Authors>Robert Snipe</Authors>
     <Copyright>Copyright (c) 2016 Robert Snipe</Copyright>
     <TargetFramework>net40</TargetFramework>
     <AssemblyName>Rrs.TaskShim</AssemblyName>
     <PackageId>Rrs.TaskShim</PackageId>
-    <PackageTags>Tasks;Net40</PackageTags>
+    <PackageTags>TaskShim;Tasks;Net40</PackageTags>
     <PackageProjectUrl>https://github.com/rrs/TaskShim</PackageProjectUrl>
     <Version>1.0.0</Version>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
