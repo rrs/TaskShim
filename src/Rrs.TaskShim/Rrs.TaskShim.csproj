@@ -8,10 +8,7 @@
     <PackageId>Rrs.TaskShim</PackageId>
     <PackageTags>TaskShim;Tasks;Net40</PackageTags>
     <PackageProjectUrl>https://github.com/rrs/TaskShim</PackageProjectUrl>
-    <Version>1.0.0</Version>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
     <Company>rrs</Company>
   </PropertyGroup>
 </Project>
