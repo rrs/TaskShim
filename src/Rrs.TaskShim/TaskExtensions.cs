@@ -22,7 +22,6 @@ namespace Rrs.TaskShim
                     throw new TimeoutException("The operation has timed out.");
                 }
             }).Unwrap();
-
         }
 
         public static Task TimeoutAfter(this Task task, TimeSpan timeout)
