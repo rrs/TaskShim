@@ -7,24 +7,24 @@ namespace Rrs.TaskShim
 {
     public static class Tap
     {
-        public static Task Run(Action a)
+        public static Task Run(Action a, CancellationToken token = default(CancellationToken))
         {
-            return Task.Factory.StartNew(a, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default);
+            return Task.Factory.StartNew(a, token, TaskCreationOptions.None, TaskScheduler.Default);
         }
 
-        public static Task<T> Run<T>(Func<T> f)
+        public static Task<T> Run<T>(Func<T> f, CancellationToken token = default(CancellationToken))
         {
-            return Task.Factory.StartNew(f, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default);
+            return Task.Factory.StartNew(f, token, TaskCreationOptions.None, TaskScheduler.Default);
         }
 
-        public static Task Run(Func<Task> f)
+        public static Task Run(Func<Task> f, CancellationToken token = default(CancellationToken))
         {
-            return Task.Factory.StartNew(f, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap();
+            return Task.Factory.StartNew(f, token, TaskCreationOptions.None, TaskScheduler.Default).Unwrap();
         }
 
-        public static Task<T> Run<T>(Func<Task<T>> f)
+        public static Task<T> Run<T>(Func<Task<T>> f, CancellationToken token = default(CancellationToken))
         {
-            return Task.Factory.StartNew(f, CancellationToken.None, TaskCreationOptions.None, TaskScheduler.Default).Unwrap();
+            return Task.Factory.StartNew(f, token, TaskCreationOptions.None, TaskScheduler.Default).Unwrap();
         }
 
         public static Task Delay(TimeSpan time)
